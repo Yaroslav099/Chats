@@ -1,0 +1,36 @@
+.App {
+    width: 100%;
+    height: 100vh;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#root {
+    width : 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-image: url('../images/dark.jpg');
+    background-size: cover;
+}
+
+.hide {
+    display: none;
+  }
+  
+@include respond(tab-port) {
+    .toggleDisplayNone {
+       display: none !important;
+     }
+ }
+
+@include respond(phone) {
+    .toggleDisplayNone {
+      display: none !important;
+     }
+}

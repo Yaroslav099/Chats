@@ -1,0 +1,54 @@
+#signUpFormContainer {
+  @include absCenter;
+  width: 60rem;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin : 0 auto;
+  @include respond(phone){
+    position: relative;
+    transform: none;
+    top: 0;
+    left: 0;
+  }
+  #signUp {
+    width : 8rem;
+    height : 4rem;
+    margin: 1.5rem 1rem 0 0;
+    background-color: yellow;
+    border : 1px solid black;
+    border-radius: 3px;
+    color : black;
+    font-weight: bold;
+    font-size : 1.6rem;
+    cursor: pointer;
+  }
+}
+
+#emailInput{
+  @include logInInput;
+  &::-webkit-input-placeholder {color:black;}
+  &:-moz-placeholder           {color:black;}
+  &:-moz-placeholder           {color:black;}
+  &:-ms-input-placeholder      {color:black;}
+ }
+ 
+#passInput{
+  @include logInInput;
+  &::-webkit-input-placeholder {color:black;}
+  &::-moz-placeholder          {color:black;}
+  &:-moz-placeholder           {color:black;}
+  &:-ms-input-placeholder      {color:black;} 
+}
+
+#userNameInput {
+  @include logInInput;
+  &::-webkit-input-placeholder {color:black;}
+  &::-moz-placeholder          {color:black;}
+  &:-moz-placeholder           {color:black;}
+  &:-ms-input-placeholder      {color:black;} 
+}
+
+

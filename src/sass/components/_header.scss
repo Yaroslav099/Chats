@@ -1,0 +1,87 @@
+.logOutBtnPosition{
+  display : flex;
+  width : 98.2%;
+  height: 4.5rem;
+  justify-content: flex-end;
+  align-items: center;
+  @include respond(tab-port) {
+    justify-content: space-around;
+    height: 7rem;
+  }
+  @include respond(phone) {
+    justify-content: space-around;
+  }
+  #openChatBtn {
+    display : none;
+    width : 10rem;
+    height: 3.5rem;
+    background-color : green;
+    text-align: center;
+    line-height: 3.5rem;
+    margin: 1% 1% 0 0;
+    border-radius : 8%;
+    color : white;
+    cursor : pointer;
+    font-size : 1em;
+    @include respond(phone) {
+      display: block;
+    }
+    @include respond(tab-port) {
+      display: block;
+    }
+  }
+  #createRoomMenu {
+    display: none;
+    width: 10rem;
+    height: 3.5rem;
+    background-color: violet;
+    text-align: center;
+    line-height: 3.5rem;
+    margin: 1% 1% 0 0;
+    border-radius: 8%;
+    color: white;
+    cursor: pointer;
+    font-size : 1em;
+    @include respond(phone) {
+      display: block;
+    }
+    @include respond(tab-port) {
+      display: block;
+    }
+  }
+  #searchRoomBtn {
+    display: none;
+    width: 10rem;
+    height: 3.5rem;
+    background-color: #ffcd41;
+    text-align: center;
+    line-height: 3.5rem;
+    margin: 1% 1% 0 0;
+    border-radius: 8%;
+    color: white;
+    cursor: pointer;
+    margin-left: 1%;
+    font-size : 1em;
+    @include respond(phone) {
+      display: block;
+    }
+    @include respond(tab-port) {
+      display: block;
+    }
+  }
+  #logOut{
+    width: 10rem;
+    height: 3.5rem;
+    text-align: center;
+    line-height: 3.5rem;
+    font-size : 1em;
+    margin: 1% 1% 0 0;
+    background-color: blue;
+    color : white;
+    border-radius: 8%;
+    border : none;
+    cursor: pointer;
+  }
+}
+
+

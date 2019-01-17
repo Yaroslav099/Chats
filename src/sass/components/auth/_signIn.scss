@@ -1,0 +1,27 @@
+#signInFormContainer {
+  @include absCenter;
+  width: 500px;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin : 0 auto;
+  @include respond(phone){
+    position: relative;
+    transform: none;
+    top: 0;
+    left: 0;
+  }
+  #signIn {
+    width : 8rem;
+    height : 4rem;
+    margin: 1.5rem 1rem 0 0;
+    background-color: green;
+    border : none;
+    border-radius: 3px;
+    font-size : 1.6rem;
+    color : white;
+    cursor: pointer;
+  }
+};
