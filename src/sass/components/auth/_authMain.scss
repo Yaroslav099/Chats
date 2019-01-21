@@ -1,16 +1,26 @@
 .signInContainer-title {
+  position: absolute;
+  @include flexCenter;
+  top: 15%;
   width: 100%;
+  height: 100px;
   color: white;
   font-size: 40px;
   text-align: center;
+  letter-spacing: 3px;
+  animation: joinLetters 1s ease-out;
+  @include respond(phone) {
+    font-size: 2.6rem;
+    top:10%;
+  }
 };
 
 #signInContainer {
   @include absCenter;
   @include flexCenter;
   flex-wrap: wrap;
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 40%;
 }
 
 .signInBtns {
@@ -29,6 +39,7 @@
 }
 
 #signInStart {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,6 +53,7 @@
   cursor: pointer;
   font-weight: bold;
   text-decoration: none;
+  animation: showSignInBtn 2s;
   @include respond(phone) {
     width: 15rem;
     margin: 0;
@@ -54,6 +66,7 @@
 };
 
 #signUpStart {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,6 +80,7 @@
   cursor: pointer;
   font-weight: bold;
   text-decoration: none;
+  animation: showSignUpBtn 2s;
   &:hover {
     transform: translateY(-8px);
     background-color: $color-secondary-dark;

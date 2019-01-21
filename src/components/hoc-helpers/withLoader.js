@@ -15,13 +15,7 @@ const withLoader = Component => {
 
     render() {
       const { loading } = this.state;
-      const RenderComponent = loading ? (
-        <Loader />
-      ) : (
-        <Component {...this.props} showLoader={this.showLoader} />
-      );
-
-      return <React.Fragment>{RenderComponent}</React.Fragment>;
+      return loading ? <Loader /> : <Component {...this.props} showLoader={this.showLoader} />;
     }
   };
 };

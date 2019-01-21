@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const AuthMain = () => (
   <React.Fragment>
+    <h1 className="signInContainer-title joinLetters">Welcome to Chats !!!</h1>
     <div id="signInContainer">
-      <h1 className="signInContainer-title">Welcom to Chats !!!</h1>
       <div className="signInBtns">
         <Link id="signInStart" to="/auth/signIn">
           Sign In

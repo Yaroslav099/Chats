@@ -5,18 +5,20 @@
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
+@import "base/animations";
 
 @import "pages/home";
 
 @import "components/loader/loader";
+
 @import "components/auth/authMain";
 @import "components/auth/signIn";
 @import "components/auth/signUp";
 
-@import "components/header";
-@import "components/chat";
-@import "components/rooms";
-@import "components/searchRoomInput";
-@import "components/createMessage";
-@import "components/createNewRoomMenu";
+@import "components/header/header";
+@import "components/chat/chat";
+@import "components/chatRooms/rooms";
+@import "components/searchRoom/searchRoomInput";
+@import "components/sendMessage/sendMessage";
+@import "components/createRoom/createNewRoomMenu";
       

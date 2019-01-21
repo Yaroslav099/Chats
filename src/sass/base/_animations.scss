@@ -1,0 +1,41 @@
+
+@keyframes joinLetters {
+  0% {
+    transform: translateX(-50%);
+    letter-spacing: 30px;
+    width: 230%;
+  }
+  100%{
+    transform: translateX(0%);
+    letter-spacing: 3px;
+    width: 95%;
+  }
+};
+
+@keyframes showSignInBtn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+
+};
+
+@keyframes showSignUpBtn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100%{
+
+    opacity: 1;
+  }
+
+};
+

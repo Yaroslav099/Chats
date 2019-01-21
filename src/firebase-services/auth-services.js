@@ -1,4 +1,7 @@
 import fb from './config';
+import UserData from '../firebase-services/user-services';
+
+const { setNameToStorage, setEmailToStorage } = new UserData();
 
 const signInUser = (emailInput, passInput, history, showLoader) => {
   showLoader(true);
@@ -18,7 +21,9 @@ const signInUser = (emailInput, passInput, history, showLoader) => {
   fb.auth().onAuthStateChanged(firebaseUser => {
     if (firebaseUser) {
       if (firebaseUser.displayName) {
-        history.push('/mainPage');
+        setNameToStorage(firebaseUser.displayName);
+        setEmailToStorage(firebaseUser.email);
+        history.push('/');
       }
     }
   });
@@ -54,13 +59,14 @@ const signUpUser = (userNameInput, emailInput, passInput, history, showLoader) =
     });
 };
 
-const logOut = history => {
+const logOut = (history, showLoader) => {
   fb.auth().signOut();
   fb.auth().onAuthStateChanged(firebaseUser => {
     if (!firebaseUser) {
-      history.replace('/');
+      window.sessionStorage.clear();
+      history.replace('/auth');
     }
   });
 };
 
-export { signInUser, signUpUser };
+export { signInUser, signUpUser, logOut };

@@ -8,6 +8,7 @@ import SignUp from '../authentication/SignUp';
 const Routs = () => (
   <React.Fragment>
     <Route exact path="/" component={Main} />
+
     <Route exact path="/auth" component={AuthMain} />
     <Route path="/auth/signIn" component={SignIn} />
     <Route path="/auth/signUp" component={SignUp} />

@@ -9,7 +9,9 @@
 }
 
 #root {
+    position: relative;
     width : 100%;
+    min-width: 320px;
     height: 100vh;
     display: flex;
     justify-content: center;

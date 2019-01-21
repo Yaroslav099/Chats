@@ -10,8 +10,13 @@
   margin-left : 4rem;
   @include respond(tab-port) {
     width: 100%;
-    height: 95%;
+    height: 90%;
     justify-content: center;
+  }
+  @include respond(phone) {
+    margin: 0 auto;
+    width: 95%;
+    margin: 0 auto;
   }
 
   .roomsContainer {
@@ -36,20 +41,24 @@
       background-color :none ;
       border-radius: 6%;
       color: yellow; 
+      &:hover {
+        cursor: pointer;
+        font-size: 2.2rem;
+      }
       @include respond(tab-port) {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        &:hover {
+          font-size: 2.3rem;
+        };
       } 
       @include respond(phone) {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
+        margin-right:0;
       }
       p { margin-bottom: 0;}
       
       #deleteBtn{
         margin-right: 5%;
-      }
-      &:hover {
-        cursor: pointer;
-        background-color :#333333;
       }
     }        
   }
